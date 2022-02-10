@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "b5665759-9988-485b-a3c3-386d7ad5b1cf",
+		"name": "MockaApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MockaApi - Medico",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"crm\": 54424,\r\n  \"nomeMedico\": \"Paulinho\",\r\n  \"usuarios\": [\r\n      {\r\n          \"idUsuario\": 1,\r\n          \"idTipoUsuario\": 1,\r\n          \"email\" : \"paciente@gmail.com\",\r\n          \"senha\": \"senai1234\"\r\n      }\r\n  ],\r\n  \"clinica\": [\r\n      {\r\n          \"idClinica\": 1,\r\n          \"nomeClinica\": \"Clinica Cardoso\",\r\n          \"cnpj\": \"96.435.803/0001-40\",\r\n          \"razaoSocial\": \"Sp MedGroup\"\r\n      }\r\n  ],\r\n  \"especialidades\": [\r\n      {\r\n          \"idEspecialidade\": 4,\r\n          \"nomeEspecialidade\" : \"Cardiologia\"\r\n      }\r\n  ],\r\n  \"id\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://620506e9161670001741b369.mockapi.io/Medico/1",
+					"protocol": "https",
+					"host": [
+						"620506e9161670001741b369",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"Medico",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MockaApi - Usuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"crm\": 54424,\r\n  \"nomeMedico\": \"Paulinho\",\r\n  \"usuarios\": [\r\n      {\r\n          \"idTipoUsuario\": 1,\r\n          \"tituloTipoUsuario\": \"user\"\r\n      }\r\n  ],\r\n  \"id\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://620506e9161670001741b369.mockapi.io/Usuario/1",
+					"protocol": "https",
+					"host": [
+						"620506e9161670001741b369",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"Usuario",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MockaApi - Paciente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomePaciente\": \"Amari\",\r\n    \"rg\": 79397,\r\n    \"cpf\": 91935,\r\n    \"dataNasc\": \"2036-07-13T05:55:37.972Z\",\r\n    \"telefone\": 86194,\r\n  \"Usuario\": [\r\n      {\r\n          \"idUsuario\": 1,\r\n          \"idTipoUsuario\": 2,\r\n          \"email\" : \"gustavo@email.com\",\r\n          \"senha\": \"12345678\",\r\n          \"tituloTipoUsuario\": \"Médico\"\r\n      }\r\n  ],\r\n  \"Endereco\": [\r\n      {\r\n          \"idEndereco\": 1,\r\n          \"rua\" : \"Av. Barao de Limeira\",\r\n          \"numero\" : \"539\",\r\n          \"cidade\" : \"Sao Paulo\",\r\n          \"estado\" : \"SP\",\r\n          \"cep\" : \"01202-001\"\r\n      }\r\n  ],\r\n  \"id\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://620506e9161670001741b369.mockapi.io/Paciente/1",
+					"protocol": "https",
+					"host": [
+						"620506e9161670001741b369",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"Paciente",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
